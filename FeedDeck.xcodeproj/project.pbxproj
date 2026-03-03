@@ -12,7 +12,6 @@
 		1A92F80ECA21745865AB2868 /* OpenClawSupabase in Frameworks */ = {isa = PBXBuildFile; productRef = 88E576C7DC6B72DE2C32EE69 /* OpenClawSupabase */; };
 		1B762E44CD750B4081FBBA04 /* FeedDeckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FFC3B427CE2719CA7F2A81 /* FeedDeckApp.swift */; };
 		1EC6C9C1F7A2508F7B23BDB8 /* FeedAggregatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADD18AE6FF63A281134D1C5 /* FeedAggregatorView.swift */; };
-		389C6CD4F7396CEF987CEB4E /* OpenClawTCA in Frameworks */ = {isa = PBXBuildFile; productRef = 26F185176B428FFBD70D4E6A /* OpenClawTCA */; };
 		4C1055B76143455F4E0BB6E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4BE5465DD640427F2549D9 /* ContentView.swift */; };
 		566AA4EC4AAF353F536376CC /* OpenClawCore in Frameworks */ = {isa = PBXBuildFile; productRef = F0550E03E0663C12F1D00F31 /* OpenClawCore */; };
 		57EE87BB3E0219192BDAC36B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE17E81A15B5EF7DC887A0A /* Assets.xcassets */; };
@@ -56,7 +55,6 @@
 				00C60578FF688513ED7FB792 /* Supabase in Frameworks */,
 				566AA4EC4AAF353F536376CC /* OpenClawCore in Frameworks */,
 				1A92F80ECA21745865AB2868 /* OpenClawSupabase in Frameworks */,
-				389C6CD4F7396CEF987CEB4E /* OpenClawTCA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +142,6 @@
 				03108CDC9DB38826FCD803AC /* Supabase */,
 				F0550E03E0663C12F1D00F31 /* OpenClawCore */,
 				88E576C7DC6B72DE2C32EE69 /* OpenClawSupabase */,
-				26F185176B428FFBD70D4E6A /* OpenClawTCA */,
 			);
 			productName = FeedDeck;
 			productReference = D4D4533A8C5DA2856013EBB6 /* FeedDeck.app */;
@@ -240,7 +237,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8643C988C4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FeedDeck/Info.plist;
@@ -335,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8643C988C4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FeedDeck/Info.plist;
@@ -484,8 +481,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Diomandeee/OpenClawKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				kind = exactVersion;
+				version = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -495,11 +492,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D26D9233C81B989703B4F8BF /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
-		};
-		26F185176B428FFBD70D4E6A /* OpenClawTCA */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DDCEA162335777F10E5EC7B5 /* XCRemoteSwiftPackageReference "OpenClawKit" */;
-			productName = OpenClawTCA;
 		};
 		88E576C7DC6B72DE2C32EE69 /* OpenClawSupabase */ = {
 			isa = XCSwiftPackageProductDependency;
